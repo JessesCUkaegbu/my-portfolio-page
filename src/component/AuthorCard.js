@@ -6,13 +6,12 @@ export default function AuthorCard({ setIsActive, isActive }) {
 
     setIsActive({
       active: true,
-      nameL: e.target.id,
+      name: e.target.id,
     });
   }
 
   return (
     <>
-      {/* <!--  --> */}
       <div
         id="intro"
         class="bg-[#
@@ -27,7 +26,7 @@ export default function AuthorCard({ setIsActive, isActive }) {
         </div>
         <div id="content" class="prose lg:prose-xl px-2">
           <h1 class="text-center text-gray-800 text-4xl capitalize font-medium">
-            Carlos S. Nah
+            Jesses C. Ukaegbu
           </h1>
           <small class="text-center block text-md text-gray-800">
             Writer, Teacher &amp; Software Engineer
@@ -47,13 +46,13 @@ export default function AuthorCard({ setIsActive, isActive }) {
               <li className="border-2 border-[#B2B2B2] p-2 rounded-lg">
                 <a
                   href="#education"
-                  onClick={handleActive}
                   id="education"
                   className={`${
                     isActive.active &&
                     isActive.name === "education" &&
                     "font-bold"
                   } font-lato text-xl`}
+                  onClick={handleActive}
                 >
                   Education
                 </a>
@@ -61,11 +60,11 @@ export default function AuthorCard({ setIsActive, isActive }) {
               <li className="border-2 border-[#B2B2B2] p-2 rounded-lg">
                 <a
                   href="#work"
-                  onClick={handleActive}
                   id="work"
                   className={`${
                     isActive.active && isActive.name === "work" && "font-bold"
                   } font-lato text-xl`}
+                  onClick={handleActive}
                 >
                   Work
                 </a>
@@ -73,13 +72,13 @@ export default function AuthorCard({ setIsActive, isActive }) {
               <li className="border-2 border-[#B2B2B2] p-2 rounded-lg">
                 <a
                   href="#hobbies"
-                  onClick={handleActive}
                   id="hobbies"
                   className={`${
                     isActive.active &&
                     isActive.name === "hobbies" &&
                     "font-bold"
                   } font-lato text-xl`}
+                  onClick={handleActive}
                 >
                   Hobbies
                 </a>
